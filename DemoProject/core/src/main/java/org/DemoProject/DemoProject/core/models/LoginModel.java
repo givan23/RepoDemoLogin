@@ -42,7 +42,7 @@ public class LoginModel {
 		String mail = request.getParameter("mail").trim().toLowerCase();
 		String password = request.getParameter("password").trim().toLowerCase();
 
-		if (name.equals("pippo") && mail.equals("eurobet") && password.equals("123")) {
+		if (name.equals("ivan") && mail.equals("ivan.trabucco@yahoo.it") && password.equals("123")) {
 			System.out
 					.println("validation success! values nome: " + name + " mail: " + mail + " password: " + password);
 
