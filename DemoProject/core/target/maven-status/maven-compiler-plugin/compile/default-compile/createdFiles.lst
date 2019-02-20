@@ -1,6 +1,7 @@
 org\DemoProject\DemoProject\core\servlets\SimpleServlet.class
-org\DemoProject\DemoProject\core\filters\LoggingFilter.class
 org\DemoProject\DemoProject\core\models\LoginModel.class
 org\DemoProject\DemoProject\core\schedulers\SimpleScheduledTask.class
 org\DemoProject\DemoProject\core\listeners\SimpleResourceListener.class
 org\DemoProject\DemoProject\core\package-info.class
+org\DemoProject\DemoProject\core\filters\LoggingFilter.class
+org\DemoProject\DemoProject\core\models\SelectModel.class

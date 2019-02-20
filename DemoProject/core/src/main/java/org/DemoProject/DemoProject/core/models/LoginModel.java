@@ -17,6 +17,7 @@ package org.DemoProject.DemoProject.core.models;
 
 import java.io.IOException;
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.servlet.ServletException;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -27,11 +28,13 @@ import org.apache.sling.models.annotations.injectorspecific.Self;
 
 public class LoginModel {
 
-	LoginModel obj = new LoginModel();
+	
+	
 	String nameForHome;
-
+	
 	@Self
 	SlingHttpServletRequest request;
+	@Inject
 	SlingHttpServletResponse response;
 
 	@PostConstruct
@@ -43,16 +46,14 @@ public class LoginModel {
 		String password = request.getParameter("password").trim().toLowerCase();
 
 		if (name.equals("ivan") && mail.equals("ivan.trabucco@yahoo.it") && password.equals("123")) {
-			System.out
-					.println("validation success! values nome: " + name + " mail: " + mail + " password: " + password);
+			System.out.println("validation success! values nome: " + name + " mail: " + mail + " password: " + password);
 
-			obj.setNameForHome(name);
-			request.getRequestDispatcher("home.html").forward(request, response);
-
+			setNameForHome(name);
+			
 		} else {
 			System.out.println("validation error!");
 
-			request.getRequestDispatcher("errorPage.html").forward(request, response);
+			response.sendRedirect("/content/demoproject/en/errorLogin.html"); 
 		}
 
 	}

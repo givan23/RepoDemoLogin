@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-02-20T11:27:04.003+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/demoproject/templates/DemoLoginProjectTemplateError"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="errorlogin"
+        sling:resourceType="demoproject/components/structure/pageError"/>
+</jcr:root>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,38 +10,43 @@
 </head>
 <body>
 
-<br><br><br>
-<table>
-<td>
-	<form action="pageResponse/pageResponse.html" method="POST">
-	     <div class="form-group">
-			 <label for="forName">Name</label>
-		     <input type="text" 
-			        class="form-control" 
-			        id="forName" 
-				    placeholder="Enter name"> 
-		</div>
-		<div class="form-group">
-			 <label for="forEmail">Email</label>
-		     <input type="email" 
-			        class="form-control" 
-			        id="forEmail"
-				    aria-describedby="emailHelp" 
-				    placeholder="Enter email"> 
-			   <small id="emailHelp" class="form-text text-muted">
-				      We'll never share your email with anyone else.
-			   </small>
-		</div>
-		<div class="form-group">
-			 <label for="forPassword">Password</label> 
-			 <input type="password" 
-			        class="form-control" 
-			        id="forPassword"
-				    placeholder="Password">
-		</div>
-		    <button type="submit" class="btn btn-primary">Login</button>
-	</form>
-    </td>
-</table>
+	<br>
+	<br>
+	<br>
+	<table align="center">
+		<tr>
+			<td>
+				<form action="/content/demoproject/en/responseLogin.html"
+					method="GET">
+					<div class="form-group">
+						<label for="forName">Name</label> <input type="text"
+							class="form-control" id="forName" placeholder="Enter name">
+					</div>
+					<div class="form-group">
+						<label for="forEmail">Email</label> <input type="email"
+							class="form-control" id="forEmail" aria-describedby="emailHelp"
+							placeholder="Enter email"> <small id="emailHelp"
+							class="form-text text-muted"> We'll never share your
+							email with anyone else. </small>
+					</div>
+					<div class="form-group">
+						<label for="forPassword">Password</label> <input type="password"
+							class="form-control" id="forPassword" placeholder="Password">
+					</div>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<br>
+			<br>
+
+			
+			   <div data-sly-resource="${ @path='par', resourceType='content/jcr_root/apps/demoproject/components/content/DemoSelect'}"></div>
+ 		       <section data-sly-include="${ @ file='content/jcr_root/apps/demoproject/components/content/DemoSelect/DemoSelect.html'}"></section> 
+			</td>
+		</tr>
+	</table>
 </body>
 </html>
